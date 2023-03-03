@@ -1,4 +1,14 @@
-# Disable Microsoft Safe Links
+# Disable Microsoft Safe Links (Cambridge version)
+
+This is a fork of https://github.com/wtimme/firefox-remove-safelinks
+
+This version of the extension only removes safelinks for things that are related to the University of Cambridge.
+
+A very basic hardcoded allowlist is used.
+
+Use the original version if you want to automatically disable all safelinks.
+
+## Intro
 
 When enabled, "Microsoft Defender for Office 365" uses a feature called
 ["Safe Link"][safe-link] to replace links in emails with URLs that go through
