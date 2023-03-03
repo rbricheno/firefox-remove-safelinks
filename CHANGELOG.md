@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.1] - 2023-03-03
+- First "Cambridge-only" version (fork)
+
 ## [1.5.0] - 2023-01-25
 ### Added
 - Support for regional Safe Link domains (e.g. "eur01.safelinks.protection.outlook.com")
