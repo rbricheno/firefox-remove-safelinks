@@ -1,9 +1,9 @@
 {
-  "description": "Disables Microsoft SafeLink protection by redirecting to the original URL instead of going through Microsoft",
+  "description": "Disables Microsoft SafeLink protection by redirecting to the original URL instead of going through Microsoft (Cambridge version)",
   "manifest_version": 2,
-  "name": "Disable Microsoft Safe Links",
+  "name": "Disable MS Safe Links (Cambridge version)",
   "version": "1.5.0",
-  "homepage_url": "https://github.com/wtimme/firefox-remove-safelinks",
+  "homepage_url": "https://github.com/rwhb2/firefox-remove-safelinks",
   "permissions": [
     "webRequest",
     "webRequestBlocking",

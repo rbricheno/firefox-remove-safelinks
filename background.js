@@ -1,10 +1,22 @@
 function removeSafelink(requestDetails) {
   var originalURL = getParameterByName('url', requestDetails.url);
 
-  console.debug('Blocked a "Microsoft Safe Link" redirect.')
-
-  return {
-    redirectUrl: originalURL
+  console.debug('Detected a "Microsoft Safe Link" redirect.');
+  let domain = (new URL(originalURL));
+  let cam = domain.hostname.endsWith(".cam.ac.uk");
+  if (domain.hostname == "universityofcambridgecloud-my.sharepoint.com") {
+    cam = true;
+  };
+  if (domain.hostname == "uniofcam.saasiteu.com") {
+    cam = true;
+  };
+  if (cam) {
+    console.debug('Rewrote a "Microsoft Safe Link" redirect.');
+    return {
+      redirectUrl: originalURL
+    };
+  } else {
+    'pass'
   };
 }
 
