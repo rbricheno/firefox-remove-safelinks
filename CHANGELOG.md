@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.5.2] - 2023-03-03
+- Add support for "double-wrapped" safelinks (where the target of the first safelink is yet another safelink...)
+
 ## [1.5.1] - 2023-03-03
 - First "Cambridge-only" version (fork)
 

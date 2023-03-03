@@ -3,6 +3,22 @@ function removeSafelink(requestDetails) {
 
   console.debug('Detected a "Microsoft Safe Link" redirect.');
   let domain = (new URL(originalURL));
+
+  let double_wrapped = domain.hostname.endsWith("safelinks.protection.outlook.com");
+  if (originalURL.startsWith("https://statics.teams.cdn.office.net/evergreen-assets/safelinks/1/atp-safelinks.html")) {
+    double_wrapped = true;
+  };
+  if (originalURL.startsWith("https://safelinks.protection.outlook.com/")) {
+    double_wrapped = true;
+  };
+  if (originalURL.startsWith("https://outlook.office.com/mail/safelink.html")) {
+    double_wrapped = true;
+  };
+  if (double_wrapped) {
+    originalURL = getParameterByName('url', originalURL);
+    domain = (new URL(originalURL));
+  };
+
   let cam = domain.hostname.endsWith(".cam.ac.uk");
   if (domain.hostname == "universityofcambridgecloud-my.sharepoint.com") {
     cam = true;
@@ -11,7 +27,7 @@ function removeSafelink(requestDetails) {
     cam = true;
   };
   if (cam) {
-    console.debug('Rewrote a "Microsoft Safe Link" redirect.');
+    console.debug('Rewrote a Cambridge-related "Microsoft Safe Link" redirect.');
     return {
       redirectUrl: originalURL
     };
