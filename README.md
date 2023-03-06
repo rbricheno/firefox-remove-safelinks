@@ -4,9 +4,13 @@ This is a fork of https://github.com/wtimme/firefox-remove-safelinks
 
 This version of the extension only removes safelinks for things that are related to the University of Cambridge.
 
-A very basic hardcoded allowlist is used.
+A very basic, hardcoded, allowlist is used. Currently that list is:
 
-Use the original version if you want to automatically disable all safelinks.
+ * *.cam.ac.uk
+ * universityofcambridgecloud-my.sharepoint.com
+ * uniofcam.saasiteu.com
+
+You should use the [original version](https://github.com/wtimme/firefox-remove-safelinks) instead if you want to automatically disable all safelinks.
 
 Install this Cambridge version using the mozilla-signed XPI here:
 
