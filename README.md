@@ -8,6 +8,10 @@ A very basic hardcoded allowlist is used.
 
 Use the original version if you want to automatically disable all safelinks.
 
+Install this Cambridge version using the mozilla-signed XPI here:
+
+https://github.com/rbricheno/firefox-remove-safelinks/blob/main/3022004557dc48658ba7-1.5.2.xpi
+
 ## Intro
 
 When enabled, "Microsoft Defender for Office 365" uses a feature called
